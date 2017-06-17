@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script>
+  var nextQuote = 0;
+function buttonClickHandler() {
+
+        var textField = document.getElementById("textField"); 
+        var quotes = [];
+        
+        quotes[0] = "Don't be so humble - you are not that great.";
+        quotes[1] = "Moral indignation is jealousy with a halo.";
+        quotes[2] = "Glory is fleeting, but obscurity is forever.";
+        quotes[3] = "The fundamental cause of trouble in the world is that the stupid are cocksure while the intelligent are full of doubt.";
+        quotes[4] = "Victory goes to the player who makes the next-to-last mistake.";
+        quotes[5] = "His ignorance is encyclopedic";
+        quotes[6] = "If a man does his best, what else is there?";
+        quotes[7] = "Political correctness is tyranny with manners.";
+        quotes[8] = "You can avoid reality, but you cannot avoid the consequences of avoiding reality.";
+        quotes[9] = "When one person suffers from a delusion it is called insanity; when many people suffer from a delusion it is called religion.";
+
+        nextQuote++;
+        textField.value = quotes[nextQuote];       
+    }
+
+</script>
+
+
+
+
+</head>
+<body>
+ <button onclick="buttonClickHandler()">click me</button>
+   <textarea id="textField"></textarea>
+
+   <div class="col-md-12 featurette-divider" style="display: noe;" style="color: black">
+        
+        <audio class="container-fluid audioCenter"  autoplay controls  >
+        <h6>Play music </h6>
+        <source src="Lony.mp3" type="audio/ogg">
+        <sourc src="Lony.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      </div> 
+
+      
+</body>
+</html>
+
